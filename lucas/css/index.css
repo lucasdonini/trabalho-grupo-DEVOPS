@@ -1,0 +1,66 @@
+@import './color-theme.css';
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  color: var(--text-color);
+  background-color: var(--primary-bgcolor);
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+header,
+footer {
+  padding: 40px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1);
+  background-color: var(--secondary-bgcolor);
+  display: flex;
+  justify-content: space-between;
+}
+
+main {
+  display: grid;
+  grid-template-columns: 1fr 3fr 1fr;
+  grid-template-areas: 'coll cont colr';
+  padding: 40px 0;
+}
+
+h1 {
+  margin: 0;
+}
+
+a {
+  color: inherit;
+}
+
+.image-column {
+  padding: 0 40px;
+
+  &>img {
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    border-radius: 15px;
+  }
+}
+
+ol[type="I"] {
+  list-style-position: inside;
+
+  &>li {
+    margin: 15px 0;
+    position: relative;
+    left: -15px;
+  }
+}
+
+#content {
+  background-color: var(--secondary-bgcolor);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  margin: 0 70px;
+  padding: 30px;
+  border-radius: 30px;
+}
