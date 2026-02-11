@@ -1,0 +1,113 @@
+body {
+    padding: 0;
+    top: 0;
+    background-color: rgb(52, 0, 52);
+    margin: 0;
+}
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* distribui espaço entre logo e botões */
+    color: rgb(250, 188, 250);
+    background-color: rgb(35, 19, 35);
+    width: 100%;
+    height: 100px;
+    padding: 10px 20px;
+    box-sizing: border-box;
+    border-bottom: 1px solid rgba(250, 188, 250, 0.2);
+    z-index: 1000;
+}
+
+#logo {
+    width: 200px;
+    height: auto;
+}
+
+header a {
+    text-decoration: none;
+}
+
+header .botoes {
+    display: flex;
+    gap: 20px;
+}
+
+button {
+    margin-top: 10px;
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    background-color: rgb(74, 2, 100);
+    color: rgb(118, 36, 156);
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    text-align: right;
+}
+
+button:hover {
+    background-color: rgb(252, 213, 252);
+}
+
+h2 {
+    color: rgb(250, 188, 250);
+    text-align: center;
+}
+
+img {
+    width: 200px;
+    height: 350px;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+p {
+    color: whitesmoke;
+}
+
+#bia {
+    background-color: rgb(23, 0, 23);
+    border-radius: 12px;
+    width: 300px;
+    padding: 10px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(13, 0, 15, 0.6);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#bia:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.8);
+}
+
+section {
+    display: flex;
+    align-items: flex-start; /* Alinha pelo topo */
+    justify-content: center;
+    gap: 30px;
+    padding: 120px 40px 40px; /* espaço extra no topo por causa do header fixo */
+    box-sizing: border-box;
+}
+
+section div {
+    max-width: 600px;
+}
+
+footer {
+    background-color: rgb(35, 19, 35);
+    color: rgb(250, 188, 250);
+    text-align: center;
+    padding: 20px;
+    font-size: 14px;
+    margin-top: 40px;
+    border-top: 1px solid rgb(250, 188, 250, 0.2);
+    position: absolute;
+    width: 100%;
+}
+
+.listas {
+    color: white;
+}
